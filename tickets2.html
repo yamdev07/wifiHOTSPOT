@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Tickets Wi-Fi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style2.css">
+  <script src="https://cdn.fedapay.com/checkout.js?v=1.1.7"></script>
+</head>
+<body>
+
+<div class="container">
+  <div class="plans-box">
+    <h3>Choisissez votre ticket</h3>
+    <div class="plans">
+      <div class="plan">
+        <h4>100 FCFA</h4>
+        <p>2 Heures d'accès</p>
+        <button class="pay-btn" data-amount="100" data-desc="2H">Acheter</button>
+      </div>
+      <div class="plan">
+        <h4>200 FCFA</h4>
+        <p>8 heures d'accès</p>
+        <button class="pay-btn" data-amount="200" data-desc="8H">Acheter</button>
+      </div>
+      <div class="plan">
+        <h4>500 FCFA</h4>
+        <p>Accès illimité - 2 jours</p>
+        <button class="pay-btn" data-amount="500" data-desc="2J">Acheter</button>
+      </div>
+      <div class="plan">
+        <h4>1000 FCFA</h4>
+        <p>Accès illimité - 7 jours</p>
+        <button class="pay-btn" data-amount="1000" data-desc="7J">Acheter</button>
+      </div>
+      <div class="plan">
+        <h4>3000 FCFA</h4>
+        <p>Accès illimité - 30 jours</p>
+        <button class="pay-btn" data-amount="3000" data-desc="30J">Acheter</button>
+      </div>
+    </div>
+    <button class="btn-secondary" onclick="window.location.href='index2.html'">Retour à la connexion</button>
+  </div>
+</div>
+
+<script>
+  document.querySelectorAll('.pay-btn').forEach(button => {
+    button.addEventListener('click', function () {
+      const montant = this.getAttribute('data-amount');
+      const description = this.getAttribute('data-desc');
+
+      FedaPay.init(this, {
+        public_key: "pk_sandbox_yDBM_DaHsFFnmuhbGAtUUOTj",
+        transaction: {
+          amount: parseInt(montant),
+          description: "Ticket Wi-Fi : " + description,
+          currency: { iso: "XOF" }
+        },
+        customer: {
+          lastname: "",
+          firstname: "",
+          email: "yoannyamd@gmail.com",
+          phone_number: { number: "64000001", country: "BJ" }
+        }
+      });
+    });
+  });
+</script>
+
+</body>
+</html>

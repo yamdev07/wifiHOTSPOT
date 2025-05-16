@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Connexion Wi-Fi - ANYXTECH</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style2.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+</head>
+<body>
+  <div class="login-container">
+    <img src="images/logo.png" alt="Logo ANYXTECH" class="logo" />
+
+    <!-- Icône Wi-Fi -->
+    <div class="wifi-icon">
+      <i class="fas fa-wifi"></i>
+    </div>
+
+    <h1 class="title">Hotspot Wi-Fi</h1>
+    <p class="subtitle">Restez connecté avec <strong>ANYXTECH</strong> !</p>
+
+    <form action="/login" method="POST">
+      <div class="input-group">
+        <i class="fas fa-user"></i>
+        <input type="text" name="username" placeholder="Nom d'utilisateur" required />
+      </div>
+      <div class="input-group">
+        <i class="fas fa-lock"></i>
+        <input type="password" name="password" placeholder="Mot de passe" required />
+      </div>
+
+      <button type="submit" class="btn-primary">Se connecter</button>
+    </form>
+
+    <button class="btn-secondary" onclick="window.location.href='tickets2.html'">Voir les tickets</button>
+
+    <p class="conditions"><a href="#">Conditions d'utilisation</a></p>
+  </div>
+</body>
+</html>

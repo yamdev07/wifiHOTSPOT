@@ -1,0 +1,239 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to bottom right, #e3f2fd, #ffffff);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.login-container {
+  background-color: #ffffffee;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 1rem;
+}
+
+/* Icône Wi-Fi */
+.wifi-icon {
+  font-size: 2.5rem;
+  color: #0077c2;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 1.8rem;
+  color: #003366;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+/* Groupe de champs avec icône */
+.input-group {
+  display: flex;
+  align-items: center;
+  background: #f0f0f0;
+  border-radius: 8px;
+  padding: 0.6rem 0.8rem;
+  margin-bottom: 1rem;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input-group i {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  color: #0077c2;
+  font-size: 1.2rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.6rem 0.8rem 0.6rem 2.5rem; /* espace pour l'icône */
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+
+/* Boutons */
+.btn-primary {
+  background: linear-gradient(to right, #00b4db, #0077c2);
+  border: none;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.btn-primary:hover {
+  background: #005fa3;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #0077c2;
+  border: 2px solid #0077c2;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.btn-secondary:hover {
+  background: #0077c2;
+  color: white;
+}
+
+/* Pied de page */
+.conditions a {
+  color: #003366;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+/* Responsive */
+@media screen and (max-width: 480px) {
+  .logo {
+    width: 80px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .input-group input {
+    font-size: 0.9rem;
+  }
+}
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #003366, #00b4db);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.container {
+  background-color: rgba(0, 55, 102, 0.85); /* bleu foncé translucide */
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 180, 219, 0.6);
+  width: 90%;
+  max-width: 700px;
+  text-align: center;
+}
+
+.plans-box h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #00d2ff; /* cyan clair */
+}
+
+.plans {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.plan {
+  background: #005080; /* bleu intermédiaire */
+  padding: 20px;
+  border-radius: 12px;
+  width: 150px;
+  box-shadow: 0 4px 10px rgba(0, 180, 219, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+.plan:hover {
+  background-color: #0088cc;
+}
+
+.plan h4 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  color: #00e5ff;
+}
+
+.plan p {
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #cceeff;
+}
+
+.plan button {
+  background-color: #00b4db;
+  border: none;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.plan button:hover {
+  background-color: #008bbf;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #00d2ff;
+  border: 2px solid #00d2ff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-top: 2rem;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #00d2ff;
+  color: #003366;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .plans {
+    flex-direction: column;
+  }
+
+  .plan {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
